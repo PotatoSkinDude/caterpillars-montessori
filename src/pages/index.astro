@@ -1,17 +1,164 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
+<BaseLayout>
+	<section class="relative pt-24 pb-8 px-6 overflow-hidden">
+		<div class="absolute top-10 left-8 w-24 h-24 bg-yellow-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute bottom-10 right-16 w-32 h-32 bg-pink-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute top-1/2 left-1/2 w-40 h-40 bg-blue-300 rounded-full opacity-60 blur-xl -translate-x-1/2"></div>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+		<div class="relative z-10 max-w-5xl mx-auto text-center">
+			<span class="inline-flex items-center gap-2 bg-white text-green-700 text-sm font-semibold px-5 py-2 rounded-full shadow-sm mb-6 border border-green-100">
+				🐛 Est. 2011 · Alam Sutera · Cikarang · Bali
+			</span>
+
+			<h1 class="text-5xl md:text-7xl font-extrabold text-gray-900 mb-2 leading-[1.1]">
+				Little steps,
+			</h1>
+			<h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-[1.1]">
+				<span class="relative inline-block text-green-600">
+					big discoveries
+					<svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 20" preserveAspectRatio="none">
+						<path d="M2 15 Q 75 2, 150 12 T 298 10" stroke="#fbbf24" stroke-width="6" fill="none" stroke-linecap="round"/>
+					</svg>
+				</span>
+			</h1>
+
+			<p class="text-lg md:text-xl text-gray-600 mb-10 max-w-xl mx-auto">
+				A joyful Montessori environment where every child explores, questions, and grows — one curious moment at a time.
+			</p>
+
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="/admissions" class="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-3.5 rounded-full shadow-md transition-transform hover:scale-105">
+					Explore Our Programs
+				</a>
+				<a href="/contact" class="inline-block bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-3.5 rounded-full shadow-md border border-gray-200 transition-transform hover:scale-105">
+					Schedule a Visit
+				</a>
+			</div>
+
+			<div class="flex justify-center gap-10 mt-14">
+				<div class="text-center">
+					<p class="text-3xl font-bold text-green-600">13+</p>
+					<p class="text-sm text-gray-500">Years Running</p>
+				</div>
+				<div class="text-center">
+					<p class="text-3xl font-bold text-green-600">3</p>
+					<p class="text-sm text-gray-500">Campuses</p>
+				</div>
+				<div class="text-center">
+					<p class="text-3xl font-bold text-green-600">4</p>
+					<p class="text-sm text-gray-500">Age Groups</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="relative py-16 px-6 overflow-hidden">
+		<div class="absolute top-4 left-4 w-40 h-40 bg-green-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute bottom-4 right-4 w-36 h-36 bg-pink-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="relative max-w-6xl mx-auto p-8 md:p-12 bg-blue-100 border-[3px] border-blue-400 rounded-[255px_15px_225px_15px/15px_225px_15px_255px]">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div class="relative">
+					<img src="/images/Montessori.jpg" alt="Children doing hands-on Montessori work" class="rounded-2xl shadow-lg w-full h-[420px] object-cover rotate-[-2deg]" />
+				</div>
+
+				<div>
+					<span class="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+						Our Approach
+					</span>
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+						Real skills, built through <span class="bg-green-200 px-2 rounded">hands-on discovery.</span>
+					</h2>
+					<p class="text-gray-600 mb-6">
+						Every corner of our classroom is designed for children to explore freely, touch, and learn at their own pace — guided, never rushed.
+					</p>
+					<ul class="space-y-3">
+						<li class="flex items-start gap-3">
+							<span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+							<span class="text-gray-700">Hands-on, self-correcting materials for every stage of growth</span>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+							<span class="text-gray-700">Concrete before abstract — children touch and explore before symbols</span>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="bg-blue-100 text-blue-600 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+							<span class="text-gray-700">Trained Montessori guides who observe and follow each child</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="relative py-16 px-6 overflow-hidden">
+		<div class="absolute top-4 right-4 w-40 h-40 bg-blue-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute bottom-4 left-4 w-36 h-36 bg-green-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="relative max-w-6xl mx-auto p-8 md:p-12 bg-yellow-100 border-[3px] border-yellow-400 rounded-[15px_255px_15px_225px/225px_15px_255px_15px]">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div class="order-2 md:order-1">
+					<span class="inline-block bg-yellow-100 text-yellow-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+						What is Montessori?
+					</span>
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
+						A method built on <span class="bg-yellow-200 px-2 rounded">respect for the child.</span>
+					</h2>
+					<p class="text-gray-600 mb-6">
+						Developed by Dr. Maria Montessori over a century ago, this approach trusts children to lead their own learning — with teachers guiding, not directing, every step of the way.
+					</p>
+					<ul class="space-y-3">
+						<li class="flex items-start gap-3">
+							<span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+							<span class="text-gray-700">Child-led exploration at their own natural pace</span>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+							<span class="text-gray-700">Mixed-age classrooms that encourage peer learning</span>
+						</li>
+						<li class="flex items-start gap-3">
+							<span class="bg-yellow-100 text-yellow-600 rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">✓</span>
+							<span class="text-gray-700">Specially designed materials that make abstract ideas concrete</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="order-1 md:order-2 relative">
+					<img src="/images/pic2.jpg" alt="Montessori classroom materials" class="rounded-2xl shadow-lg w-full h-[420px] object-cover rotate-[2deg]" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="relative py-16 px-6 overflow-hidden">
+		<div class="absolute top-4 left-[20%] w-32 h-32 bg-yellow-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute bottom-4 right-[20%] w-36 h-36 bg-blue-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="relative max-w-3xl mx-auto p-8 md:p-10 bg-green-100 border-[3px] border-green-400 rounded-[225px_15px_255px_15px/15px_255px_15px_225px] text-center">
+			<span class="inline-block bg-green-100 text-green-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+				Our Reviews
+			</span>
+
+			<div class="bg-white rounded-2xl shadow-md p-8 md:p-10 border border-gray-100">
+				<div class="flex justify-center gap-1 mb-5 text-yellow-400 text-2xl">
+					★★★★★
+				</div>
+				<p class="text-gray-700 text-lg leading-relaxed mb-6">
+					"One of the best Montessori schools in the Jabodetabek area. Excellent teachers, various equipments and a healthy environment! I remembered having an amazing time as I was studying here. Now I'm in a university overseas and will forever be grateful to Caterpillars Montessori."
+				</p>
+				<div class="flex items-center justify-center gap-3">
+					<div class="w-10 h-10 rounded-full bg-teal-500 text-white flex items-center justify-center font-bold">
+						N
+					</div>
+					<div class="text-left">
+						<p class="font-semibold text-gray-900">Nathanael Maria David Teddja</p>
+						<p class="text-sm text-gray-500">Google Review</p>
+					</div>
+				</div>
+			</div>
+
+			<a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-6 text-sm text-gray-500 hover:text-green-600 transition-colors">
+				See more reviews on Google →
+			</a>
+		</div>
+	</section>
+</BaseLayout>

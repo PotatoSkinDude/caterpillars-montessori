@@ -1,0 +1,105 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+---
+<BaseLayout>
+	<!-- Hero -->
+	<section class="relative pt-24 pb-8 px-6 text-center overflow-hidden">
+		<div class="absolute top-6 left-10 w-28 h-28 bg-yellow-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute bottom-0 right-16 w-36 h-36 bg-pink-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute top-1/3 right-1/3 w-24 h-24 bg-blue-300 rounded-full opacity-60 blur-xl"></div>
+
+		<div class="relative z-10 max-w-3xl mx-auto">
+			<span class="inline-flex items-center gap-2 bg-white text-green-700 text-sm font-semibold px-5 py-2 rounded-full shadow-sm mb-6 border border-green-100">
+				🌱 Our Journey Since 2011
+			</span>
+			<h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 leading-tight">
+				The story behind <span class="relative inline-block text-green-600">
+					Caterpillars
+					<svg class="absolute -bottom-1 left-0 w-full" viewBox="0 0 200 12" preserveAspectRatio="none">
+						<path d="M2 9 Q 50 2, 100 7 T 198 6" stroke="#fbbf24" stroke-width="5" fill="none" stroke-linecap="round"/>
+					</svg>
+				</span>
+			</h1>
+			<p class="text-lg text-gray-600 max-w-xl mx-auto">
+				A community built on curiosity, independence, and joyful learning — now across three campuses.
+			</p>
+		</div>
+	</section>
+
+	<!-- Story + Photo -->
+	<section class="relative pt-4 pb-16 px-6 overflow-hidden">
+		<div class="absolute top-4 left-4 w-40 h-40 bg-pink-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute bottom-4 right-4 w-36 h-36 bg-yellow-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="relative max-w-6xl mx-auto p-8 md:p-12 bg-green-100 border-[3px] border-green-400 rounded-[255px_15px_225px_15px/15px_225px_15px_255px]">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<img src="/images/pic9.jpg" alt="Children at Caterpillars Montessori" class="rounded-2xl shadow-md w-full h-[380px] object-cover" />
+				<div>
+					<span class="inline-block bg-green-200 text-green-800 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+						Our Story
+					</span>
+					<p class="text-gray-700 mb-4 leading-relaxed">
+						Founded in 2011 by a group of parents who believed deeply in the Montessori method, Caterpillars Montessori began its journey in Alam Sutera. What started as a shared vision among families has grown into a warm, trusted community — and today, that same vision is shared across our campuses in Alam Sutera, Cikarang, and Bali.
+					</p>
+					<p class="text-gray-700 leading-relaxed">
+						At Caterpillars Montessori, we believe every child deserves the best start. Our mission is twofold: to help families unlock the full potential of their children during these precious early years, and to nurture a love of learning built on independence, freedom within limits, and deep respect for each child's natural pace of development.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Philosophy -->
+	<section class="relative py-16 px-6 overflow-hidden">
+		<div class="absolute top-4 right-4 w-40 h-40 bg-green-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute bottom-4 left-4 w-36 h-36 bg-pink-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="relative max-w-3xl mx-auto p-8 md:p-10 bg-blue-100 border-[3px] border-blue-400 rounded-[15px_255px_15px_225px/225px_15px_255px_15px] text-center">
+			<span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+				Our Philosophy
+			</span>
+			<p class="text-gray-700 text-lg leading-relaxed mb-6">
+				Guided by the Montessori philosophy, our classrooms are designed to let children learn by doing — exploring, discovering, and growing at their own rhythm in a safe, stimulating, and joyful environment. We don't just teach children facts; we help them grow cognitively, socially, and emotionally into confident individuals ready to shape their own futures.
+			</p>
+			<p class="text-gray-700 text-lg leading-relaxed">
+				Our cheerful caterpillar symbol reflects exactly what we hope every child feels here: the colorful, carefree joy of childhood. From our classrooms to our activities, everything at Caterpillars Montessori is designed to welcome your child into a space where they feel safe, cared for, and excited to learn.
+			</p>
+		</div>
+	</section>
+
+	<!-- Our Locations -->
+	<section class="relative py-16 px-6 overflow-hidden">
+		<div class="absolute top-4 left-[20%] w-32 h-32 bg-blue-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="absolute bottom-4 right-[20%] w-36 h-36 bg-green-300 rounded-full opacity-70 blur-lg"></div>
+		<div class="relative max-w-6xl mx-auto p-8 md:p-12 bg-yellow-100 border-[3px] border-yellow-400 rounded-[225px_15px_255px_15px/15px_255px_15px_225px]">
+			<div class="text-center mb-12">
+				<span class="inline-block bg-yellow-200 text-yellow-800 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+					Our Campuses
+				</span>
+				<h2 class="text-3xl font-bold text-gray-900">Three Locations, One Shared Vision</h2>
+			</div>
+			<div class="grid md:grid-cols-3 gap-6">
+				<div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 text-center">
+					<img src="/images/Alam.png" alt="Caterpillars Montessori Alam Sutera" class="w-full h-40 object-cover" />
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-1">Alam Sutera</h3>
+						<p class="text-gray-600 text-sm">ALAM SUTERA, Blok 29A No. 21,, Jl. Jalur Sutera, Kunciran, Kec. Pinang, Kota Tangerang, Banten 15331
+						</p>
+					</div>
+				</div>
+				<div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 text-center">
+					<img src="/images/Cikarang.png" alt="Caterpillars Montessori Cikarang" class="w-full h-40 object-cover" />
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-1">Cikarang</h3>
+						<p class="text-gray-600 text-sm">Ruko, The Podium Blok A/03, Jl. Mataram, Lippo, Cibatu, Jl. Tirta Kencana 1 No.3, Cibatu, Cikarang Sel., Kabupaten Bekasi, Jawa Barat 17530</p>
+					</div>
+				</div>
+				<div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 text-center">
+					<img src="/images/Bali.png" alt="Caterpillars Montessori Bali" class="w-full h-40 object-cover" />
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-1">Bali</h3>
+						<p class="text-gray-600 text-sm">Jl. Tukad Penet No.4B, Renon, Denpasar Selatan, Kota Denpasar, Bali 80239</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</BaseLayout>
